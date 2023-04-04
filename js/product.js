@@ -1,21 +1,104 @@
+import { productData } from "./product-data";
+
+// Product Data
+const PRODUCT_DATA = [
+  {
+    id: 1,
+    name: "Black Pants",
+    category: "Apparel",
+    price: 99.99,
+    imageUrl: 'product-image-1.png',
+    productRating: 4.2,
+    description: "Some really nice pants",
+  },
+  {
+    id: 1,
+    name: "Black Pants",
+    category: "Apparel",
+    price: 99.99,
+    imageUrl: 'product-image-1.png',
+    productRating: 4.2,
+    description: "Some really nice pants",
+  },
+  {
+    id: 1,
+    name: "Black Pants",
+    category: "Apparel",
+    price: 99.99,
+    imageUrl: 'product-image-1.png',
+    productRating: 4.2,
+    description: "Some really nice pants",
+  },
+  {
+    id: 1,
+    name: "Black Pants",
+    category: "Apparel",
+    price: 99.99,
+    imageUrl: 'product-image-1.png',
+    productRating: 4.2,
+    description: "Some really nice pants",
+  },
+  {
+    id: 1,
+    name: "Black Pants",
+    category: "Apparel",
+    price: 99.99,
+    imageUrl: 'product-image-1.png',
+    productRating: 4.2,
+    description: "Some really nice pants",
+  },
+  {
+    id: 1,
+    name: "Black Pants",
+    category: "Apparel",
+    price: 99.99,
+    imageUrl: 'product-image-1.png',
+    productRating: 4.2,
+    description: "Some really nice pants",
+  },
+  {
+    id: 1,
+    name: "Black Pants",
+    category: "Apparel",
+    price: 99.99,
+    imageUrl: 'product-image-1.png',
+    productRating: 4.2,
+    description: "Some really nice pants",
+  },
+  {
+    id: 123,
+    name: "Black Pants",
+    category: "Apparel",
+    price: 99.99,
+    imageUrl: 'product-image-1.png',
+    productRating: 4.2,
+    description: "Some really nice pants",
+  },
+];
+
 document.addEventListener("DOMContentLoaded", function() {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const productId = urlParams.get('id');
     
-    console.log(productId); // prints "123"
-    
+    const product = PRODUCT_DATA.find(product => product.id == productId);
+
+    // Get the product information from the page
+    const productName = product.name;
+    const productPrice = product.price;
+    const productImage = product.imageUrl;
+    const productDescription = product.description;
+    console.log(productName);
+    // Dynamically render page
+    document.getElementById('product-name').innerText = productName;
+    document.getElementById('product-price').innerText = `$${productPrice}`;
+    document.getElementById('product-description').innerText = productDescription;
+
     // Get the "Add to Cart" button element
     const addToCartButton = document.getElementById('add-to-cart');
     
     // Add a click event listener to the button
-    addToCartButton.addEventListener('click', () => {
-      // Get the product information from the page
-      const productId = '123'; // Replace with the actual product ID
-      const productName = 'Product Name'; // Replace with the actual product name
-      const productPrice = 99.99; // Replace with the actual product price
-      const productImage = 'product-image.jpg'; // Replace with the actual product image URL
-    
+    addToCartButton.addEventListener('click', () => {  
       // Get the user's cart data from localStorage
       let cart = JSON.parse(localStorage.getItem('cart')) || [];
     
