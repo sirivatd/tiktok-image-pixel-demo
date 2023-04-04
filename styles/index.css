@@ -35,12 +35,10 @@ img {
   }
 }
 
-
-
 /* HEADER */
  .logob{
- width: 100px;
- height: 80px;
+ width: 200px;
+ height: 100px;
  cursor: pointer;
  }
  
@@ -72,7 +70,6 @@ img {
   display: flex;
   align-items: center;
 }
-
 
  .align-center {
   display: flex;
@@ -160,9 +157,6 @@ img {
   margin-top: 75px;
   margin-left: 600px;
 }
-
-
-
 
 /* Section */
 .section {
@@ -335,52 +329,54 @@ img {
   }
 }
     
-    /*footer*/
-    #footer {
-      
-        box-sizing: border-box;
-        font-family: 'Poppins',sans-serif;
-        position: relative;
-        min-height: 50vh;
-        padding: 50px 100px;
-        background-color: black;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-     }
+/*footer*/
+#footer { 
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  position: relative;
+  min-height: 50vh;
+  padding: 50px 100px;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+         
+#footer ul li{
+  color: white;
+  list-style:none;
+  margin: 30px 40px;
+  padding-top: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
     
-     
-     #footer ul li{
-        color: white;
-        list-style:none;
-        margin: 30px 40px;
-        padding-top: 20px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
+#footer ul li a{
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+}
     
-    #footer ul li a{
-        text-decoration: none;
-        color: white;
-        font-family: sans-serif;
-    }
-    
-    #footer ul li a:hover{
-        color: #ff4321;
-    } 
+#footer ul li a:hover{
+  color: #ff4321;
+} 
     
     
-    .social-links{
-        margin-left: 8%;
-        margin-top: 100px;
-    }
+.social-links{
+  margin-left: 8%;
+  margin-top: 100px;
+}
     
-    .social-links a{
-        font-size: 30px;
-        color: #606163;
-        margin-right: 20px;
-    }
+.social-links a{
+  font-size: 30px;
+  color: #606163;
+  margin-right: 20px;
+}
     
-    .social-links a:hover{
-     color: #ff4321;
-    }
+.social-links a:hover{
+  color: #ff4321;
+}
+
+.product-link {
+  text-decoration: none;
+}
