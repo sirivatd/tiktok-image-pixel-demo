@@ -95,9 +95,6 @@ img {
     } 
   }
   
-  
-  
-
 /* Intro */
 .intro {
   height: calc(100vh - 112px);
@@ -105,18 +102,19 @@ img {
   position: relative;
   z-index: 0;
   background-color: lightgray;
-  background-image: url('wallet1.jpg');
+  background-image: url('../assets/img/intro_image.png');
   background-repeat: no-repeat;
   background-attachment: scroll; 
   background-size: 100% 100%;
-/*background-blend-mode: overlay;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .intro-content {
   height: 100%;
 }
-
-
 
 .dis {
   display: inline-block;
@@ -130,6 +128,7 @@ img {
   font-weight: 600;
   font-size: 50px;
   text-align: center;
+  color: white;
 }
 
 .intro h2 {
@@ -137,6 +136,7 @@ img {
   font-weight: 600;
   font-size: 45px;
   text-align: center;
+  color: white;
 }
 
 
@@ -144,6 +144,7 @@ img {
   font-weight: 400;
   font-size: 40px;
   text-align: center;
+  color: white;
 }
 
 .btn {
@@ -155,7 +156,11 @@ img {
   font-weight: 600;
   box-shadow: 0 16px 24px rgba(0, 0, 0, 0.3);
   margin-top: 75px;
-  margin-left: 600px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #df452a;
 }
 
 /* Section */
@@ -334,7 +339,7 @@ img {
   box-sizing: border-box;
   font-family: 'Poppins',sans-serif;
   position: relative;
-  min-height: 50vh;
+  height: 175px;
   padding: 50px 100px;
   background-color: black;
   justify-content: center;
@@ -363,8 +368,7 @@ img {
     
     
 .social-links{
-  margin-left: 8%;
-  margin-top: 100px;
+  margin-left: 2%;
 }
     
 .social-links a{
@@ -379,4 +383,11 @@ img {
 
 .product-link {
   text-decoration: none;
+}
+
+.copyright {
+  color: rgb(165, 165, 165);
+  font-size: 13px;
+  margin-left: 2%;
+  margin-top: 15px;
 }

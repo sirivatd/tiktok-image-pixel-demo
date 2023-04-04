@@ -109,14 +109,14 @@ img {
   background-repeat: no-repeat;
   background-attachment: scroll; 
   background-size: 100% 100%;
-/*background-blend-mode: overlay;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .intro-content {
   height: 100%;
 }
-
-
 
 .dis {
   display: inline-block;
@@ -155,7 +155,6 @@ img {
   font-weight: 600;
   box-shadow: 0 16px 24px rgba(0, 0, 0, 0.3);
   margin-top: 75px;
-  margin-left: 600px;
 }
 
 /* Section */
@@ -331,40 +330,39 @@ img {
     
 /*footer*/
 #footer { 
-  box-sizing: border-box;
-  font-family: 'Poppins',sans-serif;
-  position: relative;
-  min-height: 50vh;
-  padding: 50px 100px;
-  background-color: black;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-         
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    position: relative;
+    height: 175px;
+    padding: 50px 100px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+           
 #footer ul li{
-  color: white;
-  list-style:none;
-  margin: 30px 40px;
-  padding-top: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+    color: white;
+    list-style:none;
+    margin: 30px 40px;
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-    
+      
 #footer ul li a{
-  text-decoration: none;
-  color: white;
-  font-family: sans-serif;
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
 }
-    
+      
 #footer ul li a:hover{
-  color: #ff4321;
+    color: #ff4321;
 } 
-    
-    
+      
+      
 .social-links{
-  margin-left: 8%;
-  margin-top: 100px;
+    margin-left: 2%;
 }
     
 .social-links a{
@@ -379,4 +377,11 @@ img {
 
 .product-link {
   text-decoration: none;
+}
+
+.copyright {
+    color: rgb(165, 165, 165);
+    font-size: 13px;
+    margin-left: 2%;
+    margin-top: 15px;
 }
