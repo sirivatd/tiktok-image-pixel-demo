@@ -1,5 +1,5 @@
 // Product Data
-export const productData = [
+export const PRODUCT_DATA = [
     {
       id: 1,
       name: "Black Pants",
