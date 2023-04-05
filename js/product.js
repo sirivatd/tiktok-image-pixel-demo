@@ -1,4 +1,77 @@
-import { PRODUCT_DATA } from "./product-data.js";
+const PRODUCT_DATA = [
+  {
+    id: 1,
+    name: "Black Pants",
+    category: "Apparel",
+    price: 99.99,
+    imageUrl: 'product-image-1.png',
+    productRating: 4.2,
+    description: "Some really nice pants",
+  },
+  {
+    id: 1,
+    name: "Black Pants",
+    category: "Apparel",
+    price: 99.99,
+    imageUrl: 'product-image-1.png',
+    productRating: 4.2,
+    description: "Some really nice pants",
+  },
+  {
+    id: 1,
+    name: "Black Pants",
+    category: "Apparel",
+    price: 99.99,
+    imageUrl: 'product-image-1.png',
+    productRating: 4.2,
+    description: "Some really nice pants",
+  },
+  {
+    id: 1,
+    name: "Black Pants",
+    category: "Apparel",
+    price: 99.99,
+    imageUrl: 'product-image-1.png',
+    productRating: 4.2,
+    description: "Some really nice pants",
+  },
+  {
+    id: 1,
+    name: "Black Pants",
+    category: "Apparel",
+    price: 99.99,
+    imageUrl: 'product-image-1.png',
+    productRating: 4.2,
+    description: "Some really nice pants",
+  },
+  {
+    id: 1,
+    name: "Black Pants",
+    category: "Apparel",
+    price: 99.99,
+    imageUrl: 'product-image-1.png',
+    productRating: 4.2,
+    description: "Some really nice pants",
+  },
+  {
+    id: 1,
+    name: "Black Pants",
+    category: "Apparel",
+    price: 99.99,
+    imageUrl: 'product-image-1.png',
+    productRating: 4.2,
+    description: "Some really nice pants",
+  },
+  {
+    id: 123,
+    name: "Black Pants",
+    category: "Apparel",
+    price: 99.99,
+    imageUrl: 'product-image-1.png',
+    productRating: 4.2,
+    description: "Some really nice pants",
+  },
+];
 
 document.addEventListener("DOMContentLoaded", function() {
     const queryString = window.location.search;
